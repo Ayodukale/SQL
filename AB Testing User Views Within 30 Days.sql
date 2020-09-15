@@ -1,3 +1,14 @@
+/*
+
+Checking to see the variation in effectiveness of an experiment, such as a new email campaign.
+Focusing on test_id 7.
+Comparing if the baseline group, 0, viewed the site/product more than the experiment group, 1.
+And comparing how many viewed within 30 days of the experiment.
+
+*/
+
+
+
 SELECT 
 t3.test_assignment,
 COUNT(user_id)         AS users,
