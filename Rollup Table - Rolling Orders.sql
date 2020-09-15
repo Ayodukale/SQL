@@ -1,3 +1,16 @@
+/*
+
+Creating a subtable of daily and weekly rollup orders by using various joins and aggregations.
+
+
+First I created a subtable of orders per day.
+Joined this subtable to the dates rollup table to get a row for every date.
+Cleaned up columns, applied aggregations.
+I treated the join as a where clause so that it would join on dates I needed within the column. 
+As opposed to the entire column.
+
+*/ 
+
 SELECT 
 t1.date,
 COALESCE (SUM(orders),0)      AS orders,
