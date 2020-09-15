@@ -1,3 +1,15 @@
+/*
+
+Creating a query to find each user's most recently viewed items of which were not converted into sales, to enable succesful email marketing ads. 
+
+Created views subtable. 
+Joined views table to user table and items table. 
+Added row_number window function to see the order in which each user viewed their items. 
+Cleaned up query and added filters.
+
+*/
+
+
 SELECT 
 t1.user_id,
 t1.view_number,
